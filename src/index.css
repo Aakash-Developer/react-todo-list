@@ -12,6 +12,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.form-select{
+/* .form-select{
   max-width: 150px;
+} */
+
+
+.task-inner-card{
+  flex-basis: 49%;
+  margin: 0.5rem 0rem;
+  transition: all 0.5s ease;
+}
+.action i{
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.task-inner-card:hover{
+  box-shadow: 5px 5px 8px -6px rgba(0, 0, 0, 0.521);
+}
+.pendding{
+  background: rgb(255,0,0);
+background: linear-gradient(90deg, rgba(255, 0, 0, 0.078) 1%, rgba(255,255,255,1) 99%);
+}
+.completed{
+  background: rgb(37,183,7);
+background: linear-gradient(90deg, rgba(36, 183, 7, 0.082) 1%, rgba(255,255,255,1) 99%);
+}
+@media only screen and (max-width: 920px){
+  .task-inner-card{
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
 }
