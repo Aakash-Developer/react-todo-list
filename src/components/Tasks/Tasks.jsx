@@ -15,7 +15,7 @@ export default function Tasks({ taskList, setTaskList }) {
   return (
     <div className="task-box">
       <div className="card border-0">
-        <div className="text-center text-md-start mb-1 mb-md-3 d-flex justify-content-between align-items-center">
+        <div className="text-center text-md-start mb-3 mb-md-5 d-flex justify-content-between align-items-center flex-wrap">
           <button type="button" class="btn mybadge shadow-none">
             Total Tasks
             <span class="badge bg-light text-dark ms-1">
