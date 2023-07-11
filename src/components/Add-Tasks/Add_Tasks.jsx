@@ -1,7 +1,7 @@
 import './add_task.css';
 export default function Add_Tasks() {
   return (
-    <div className='my-3 my-md-5'>
+    <div className='my-3 mt-5 my-md-5'>
     <form className="container">
          <div class="row align-items-start">
           <div class="col-12 col-md-7 col-sm-12  px-1">
