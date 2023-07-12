@@ -38,7 +38,12 @@ export default function Add_Tasks({ taskList, setTaskList, Usertask, setUsertask
           </div>
 
           <div className="col-6 col-md-3 col-sm-6 px-1">
-            <select className="form-select w-100" name="status" aria-label="Default select example">
+            <select
+              className="form-select w-100"
+              name="status"
+              aria-label="Default select example"
+              value={Usertask.status || "pending"}
+              onChange={(e) => setUsertask({ ...Usertask, status: e.target.value })}>
               <option value="pending" defaultValue>
                 Pending
               </option>
