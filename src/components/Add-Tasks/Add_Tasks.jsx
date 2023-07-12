@@ -20,6 +20,7 @@ export default function Add_Tasks({ taskList, setTaskList, Usertask, setUsertask
       };
       if (e.target.task.value !== "" && e.target.task.value !== undefined) {
         setTaskList([...taskList, task]);
+        setUsertask({});
       }
     }
     e.target.task.value = "";
