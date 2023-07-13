@@ -11,7 +11,7 @@ export default function Tasks({ taskList, setTaskList, Usertask, setUsertask }) 
 
   return (
     <div className="task-box">
-      <div className="card border-0">
+      <div className="card border-0 bg-transparent">
         <div className="text-center text-md-start mb-3 mb-md-5 d-flex justify-content-between align-items-center flex-wrap">
           <button type="button" className="btn mybadge shadow-none">
             Total Tasks
@@ -39,21 +39,21 @@ export default function Tasks({ taskList, setTaskList, Usertask, setUsertask }) 
                 className={
                   task.status === "completed" ? "card-body d-flex justify-content-between align-items-start completed" : "card-body d-flex justify-content-between align-items-start pendding"
                 }>
-                <div className="status">
-                  <h6 className="card-title m-0 text-capitalize">{task.task}</h6>
+                <div className="status pe-5">
+                  <h6 className="card-title m-0 text-capitalize text-break">{task.task}</h6>
                   <span className="text-muted text-capitalize">{task.status}</span>
                   <span className="text-muted text-small d-block m-0" style={{ fontSize: "10px" }}>
                     {task.time}
                   </span>
                 </div>
-                <div className="action">
+                <div className="action d-flex flex-column">
                   <i
-                    className="bi bi-pencil-square text-success fs-4 p-2"
+                    className="bi bi-pencil-square text-success fs-4 p-0"
                     onClick={() => {
                       handelEdit(task.id);
                     }}></i>
                   <i
-                    className="bi bi-trash3-fill text-danger fs-4 p-2"
+                    className="bi bi-trash3-fill text-danger fs-4 p-0"
                     onClick={() => {
                       handelDelete(task.id);
                     }}></i>

@@ -53,7 +53,7 @@ export default function Add_Tasks({ taskList, setTaskList, Usertask, setUsertask
 
           <div className=" col-6 col-md-2 col-sm-6 px-1">
             <button type="submit" className="btn btn-outline-success w-100">
-              ADD TASK
+              {Usertask.id ? "UPDATE TASK" : "ADD TASK"}
             </button>
           </div>
         </div>
