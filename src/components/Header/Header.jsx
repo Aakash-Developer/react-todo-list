@@ -11,8 +11,7 @@ export default function Header() {
           data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <a className="navbar-brand text-uppercase fw-bolder" href="#">
@@ -21,18 +20,8 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link " href="#">
-                Contect Us
+              <a className="nav-link active text-muted" aria-current="page" href="#">
+                By Aakash.
               </a>
             </li>
           </ul>
